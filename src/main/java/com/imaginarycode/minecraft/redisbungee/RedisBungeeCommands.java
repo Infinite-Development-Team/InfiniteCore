@@ -10,6 +10,7 @@ import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.config.ServerInfo;
 import net.md_5.bungee.api.plugin.Command;
+import java.util.concurrent.ThreadLocalRandom;
 
 import java.net.InetAddress;
 import java.text.SimpleDateFormat;
@@ -103,6 +104,32 @@ class RedisBungeeCommands {
                 serverName.setText("§rYou are connected to server " + server + "§r");
                 sender.sendMessage(serverName);
             }
+        }
+    }
+
+    public static class DadJokeCommand extends Command {
+        private final RedisBungee plugin;
+
+        DadJokeCommand(RedisBungee plugin) {
+            super("dadjoke", "infinite.command.dadjoke", "djoke");
+            this.plugin = plugin;
+        }
+
+        @Override
+        public void execute(CommandSender sender, String[] args) {
+          // nextInt is normally exclusive of the top value,
+          // so add 1 to make it inclusive
+          String[] s = {"After an unsuccessful harvest, why did the farmer decide to try a career in music? Because he had a ton of sick beets.",
+          "I just found out I’m colorblind. The news came out of the purple!",
+          "Did you know Davy Crockett had three ears? A left ear, a right ear, and a wild frontier.",
+          "/dadjoke.",
+          "Singing in the shower is all fun and games until you get shampoo in your mouth.... Then it's a soap opera."};
+          int randomNum = ThreadLocalRandom.current().nextInt(0, s.length);
+            TextComponent textComponent = new TextComponent();
+            textComponent.setText("§aDad: §c" + s[randomNum] + "");
+            textComponent.setColor(ChatColor.WHITE);
+            sender.sendMessage(textComponent);
+            Multimap<String, UUID> serverToPlayers = RedisBungee.getApi().getServerToPlayers();
         }
     }
 
