@@ -66,7 +66,7 @@ class RedisBungeeCommands {
                             serverName.setText("§eServer:§f " + server + "§r ");
                             TextComponent serverCount = new TextComponent();
                             serverCount.setColor(ChatColor.YELLOW);
-                            serverCount.setText("§aOnline:§6 " + serverToPlayers.get(server).size() + " §aPeople f: ");
+                            serverCount.setText("§aOnline:§6 " + serverToPlayers.get(server).size() + " §aPeople: ");
                             TextComponent serverPlayers = new TextComponent();
                             serverPlayers.setColor(ChatColor.AQUA);
                             serverPlayers.setText(Joiner.on(", ").join(human.get(server)));
