@@ -107,6 +107,30 @@ class RedisBungeeCommands {
         }
     }
 
+    public static class ProxyCommand extends Command {
+        private final RedisBungee plugin;
+
+        ProxyCommand(RedisBungee plugin) {
+            super("proxy", "infinite.command.connection");
+            this.plugin = plugin;
+        }
+
+        @Override
+        public void execute(CommandSender sender, String[] args) {
+            TextComponent textComponent = new TextComponent();
+            textComponent.setText("§rYou are connected to proxy " + RedisBungee.getApi().getServerId() + "");
+            textComponent.setColor(ChatColor.WHITE);
+            sender.sendMessage(textComponent);
+            Multimap<String, UUID> serverToPlayers = RedisBungee.getApi().getServerToPlayers();
+            for (String server : new TreeSet<>(serverToPlayers.keySet())) {
+                TextComponent serverName = new TextComponent();
+                serverName.setColor(ChatColor.WHITE);
+                serverName.setText("§rYou are connected to server " + server + "§r");
+                sender.sendMessage(serverName);
+            }
+        }
+    }
+
     public static class DadJokeCommand extends Command {
         private final RedisBungee plugin;
 
@@ -145,6 +169,23 @@ class RedisBungeeCommands {
         public void execute(CommandSender sender, String[] args) {
             TextComponent textComponent = new TextComponent();
             textComponent.setText("§aWelcome to §bInfinite§a! Follow our discord @ discord.playinfinite.net");
+            textComponent.setColor(ChatColor.WHITE);
+            sender.sendMessage(textComponent);
+        }
+    }
+
+    public static class InfiniteCoreCommand extends Command {
+        private final RedisBungee plugin;
+
+        InfiniteCoreCommand(RedisBungee plugin) {
+            super("infinitecore", "infinite.command.infinite.core", "in");
+            this.plugin = plugin;
+        }
+
+        @Override
+        public void execute(CommandSender sender, String[] args) {
+            TextComponent textComponent = new TextComponent();
+            textComponent.setText("§bInfiniteCore, by the Infinite Development Team");
             textComponent.setColor(ChatColor.WHITE);
             sender.sendMessage(textComponent);
         }

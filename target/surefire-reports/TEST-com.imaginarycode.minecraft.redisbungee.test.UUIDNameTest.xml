@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.imaginarycode.minecraft.redisbungee.test.UUIDNameTest" time="0.862" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.imaginarycode.minecraft.redisbungee.test.UUIDNameTest" time="0.835" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.1+1"/>
@@ -61,6 +61,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="com.imaginarycode.minecraft.redisbungee.test.UUIDNameTest" name="testNameToUuid" time="0.655"/>
-  <testcase classname="com.imaginarycode.minecraft.redisbungee.test.UUIDNameTest" name="testUuidToName" time="0.207"/>
+  <testcase classname="com.imaginarycode.minecraft.redisbungee.test.UUIDNameTest" name="testNameToUuid" time="0.557"/>
+  <testcase classname="com.imaginarycode.minecraft.redisbungee.test.UUIDNameTest" name="testUuidToName" time="0.278"/>
 </testsuite>

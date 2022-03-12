@@ -47,8 +47,10 @@ com/imaginarycode/minecraft/redisbungee/RedisBungeeConfiguration.class
 com/imaginarycode/minecraft/redisbungee/RedisBungeeListener$3.class
 com/imaginarycode/minecraft/redisbungee/util/uuid/NameFetcher.class
 com/imaginarycode/minecraft/redisbungee/RedisBungeeCommands$IpCommand$1.class
+com/imaginarycode/minecraft/redisbungee/RedisBungeeCommands$ProxyCommand.class
 com/imaginarycode/minecraft/redisbungee/util/uuid/NameFetcher$1.class
 com/imaginarycode/minecraft/redisbungee/RedisUtil.class
+com/imaginarycode/minecraft/redisbungee/RedisBungeeCommands$InfiniteCoreCommand.class
 com/imaginarycode/minecraft/redisbungee/DataManager$3.class
 com/imaginarycode/minecraft/redisbungee/util/LuaManager.class
 com/imaginarycode/minecraft/redisbungee/RedisBungeeCommands$PlayerProxyCommand$1.class
