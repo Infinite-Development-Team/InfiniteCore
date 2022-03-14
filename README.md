@@ -1,3 +1,5 @@
 # InfiniteCore
-InfiniteCore is used to link proxies together via Redis.
-It also have some commands for the servers players.
+
+InfiniteCore is used to link proxies together via Redis. InfiniteCore also has some core commands for the server.
+
+To compile use "mvn clean install". Get the jar file from target.
