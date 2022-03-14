@@ -10,17 +10,14 @@ As of now Version 0.6.4 is only supporting redis 6.0 and above!
 
 ## Compiling
 
-Now you can use Maven without installing it using [Maven wrappe](https://github.com/takari/maven-wrapper) :)
-
-RedisBungee is distributed as a [maven](https://maven.apache.org) project. 
+InfiniteCore is distributed as a [maven](https://maven.apache.org) project. 
 
 To compile and installing to in your local Maven repository:
 
-    git clone https://github.com/Limework/RedisBungee.git .
-    mvnw clean install
-    mvnw package
+    git clone https://github.com/SeanMurillo/InfiniteCore.git .
+    mvn clean install
+    mvn package
 
-If you have deb maven installed, you can use the `mvn` command instead.
 
 And use it in your pom file.
 
