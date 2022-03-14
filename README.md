@@ -1,8 +1,10 @@
 # InfiniteCore
 
-InfiniteCore, a fork of Redisbungee [Redisbungee](https://github.com/ProxioDev/RedisBungee).  
+InfiniteCore, a fork of [Redisbungee](https://github.com/ProxioDev/RedisBungee).  
 
-InfiniteCore is used to link proxies together via Redis. InfiniteCore also has some core commands for the server.
+InfiniteCore is used to link proxies together via Redis. InfiniteCore also has some core commands for the Infinite Network.
+
+Our MineCraft server: mc.playinfinite.net
 
 ## Notice: about older versions of redis than redis 6.0
 
