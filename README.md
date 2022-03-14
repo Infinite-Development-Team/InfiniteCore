@@ -20,3 +20,4 @@ To compile and installing to in your local Maven repository:
     mvn clean install
     mvn package
 
+You will recieve a jar file under the folder target after compiling it.
