@@ -43,7 +43,7 @@ class RedisBungeeCommands {
         private final RedisBungee plugin;
 
         GlistCommand(RedisBungee plugin) {
-            super("glist", "bungeecord.command.list", "redisbungee", "rglist");
+            super("glist", "infinitebungee.command.list", "redisbungee", "rglist");
             this.plugin = plugin;
         }
 
